@@ -1,0 +1,126 @@
+@import url('https://fonts.googleapis.com/css2?family=Nabla&family=Ubuntu:wght@700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+}
+html{
+    font-size: 62.5%;
+}
+body{
+    background: #1a1a1a;
+}
+
+.title{
+    font-family: 'Nabla', cursive;
+    font-size: 8rem;
+    text-align: center;
+    margin-top: 5rem;
+}
+.game-container{
+    width: 70rem;
+    height: 50rem;
+    border-radius: 10px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-family: 'Ubuntu', sans-serif;
+    background: #1a1a1d;
+    box-shadow: 0 2px 1.2rem -2px black;
+}
+
+.players-container{
+    display: flex;
+    justify-content: space-around;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    z-index: -1;
+    flex-wrap: wrap;
+}
+
+.section{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+}
+
+.player-0{
+    border-radius: 5px 0 0 5px;
+}
+.player-1{
+    border-radius: 0px 5px 5px 0;
+}
+
+.upper-section{
+    color: #c3073f;
+}
+.upper-section h1{
+    font-size: 5rem;
+    margin-bottom: 2rem;
+}
+.upper-section span{
+    font-size: 5rem;
+}
+
+.lower-section{
+    background: #c3073f;
+    padding: 1rem 2rem;
+    font-size: 2.5rem;
+    border-radius: 3px;
+}
+.lower-section span{
+    font-size: 4rem;
+}
+
+.otherAssets{
+    height: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+    background: transparent;
+}
+.otherAssets button{
+    padding: 8px 2.5rem;
+    font-size: 1.5rem;
+    font-weight: bold;
+    background: #F6F1EB;
+    border: none;
+    box-shadow: 0 2px 10px -2px black;
+    border-radius: 5rem;
+    cursor: pointer;
+    transition: .1s;
+}
+.otherAssets button:active{
+    box-sizing: 0 1px 6px -2px black;
+    transform: translateY(2px);
+}
+img{
+    height: 12rem;
+    border-radius: 5px;
+    box-shadow: 0 2px 10px -2px black;
+}
+
+.hidden{
+    visibility: hidden;
+}
+
+.player-active{
+    background: #313131;
+}
+.player-active .upper-section{
+    color: #F6F1EB;
+}
+.player-active .lower-section{
+    background-color: #F6F1EB;
+    color: #313131;
+}
+
+.winner{
+    background-color: #181818;
+}

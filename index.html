@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Dice Roll game</title>
+  </head>
+  <body>
+      <h1 class="title">Dice Game</h1>
+    <div class="game-container">
+      <div class="players-container">
+        <div class="section player-0 player-active">
+          <div class="upper-section">
+            <h1>Player 1</h1>
+            <span id="score-0">0</span>
+          </div>
+          <div class="lower-section">
+            <h3>Current</h3>
+            <span class="current-score-0">0</span>
+          </div>
+        </div>
+        <div class="section player-1">
+          <div class="upper-section">
+            <h1>Player 2</h1>
+            <span id="score-1">0</span>
+          </div>
+          <div class="lower-section">
+            <h3>Current</h3>
+            <span class="current-score-1">0</span>
+          </div>
+        </div>
+      </div>
+      <div class="otherAssets">
+          <button class="reset">🔁 New Game</button>
+        <img src="assets/img-1.png" alt="dice-image" class="img" />
+        <button class="scroll">🎲 Scroll</button>
+        <button class="hold">✊ Hold</button>
+      </div>
+    </div>
+  </body>
+  <script src="script.js"></script>
+</html>
